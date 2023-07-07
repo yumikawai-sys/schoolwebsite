@@ -1,0 +1,11 @@
+.topmenu {
+    top:0;
+    height: 100px;
+    position: fixed;
+    display: flexbox;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff; /* Set the background color of the menu bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
