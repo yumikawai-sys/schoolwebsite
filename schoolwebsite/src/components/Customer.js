@@ -7,66 +7,46 @@ export default function Customer() {
         <div className="customerall">
             <h2 className='aboutTitle'>ご利用例</h2>
             <h3 className='subTitle'>導入事例とご利用までの流れ</h3>
-        </div>
         
-        <div classname='featuer1' style={{display:'flex'}}>
-            <div className="featureContent" style={{margin:'20px'}}>
-                <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
-                <p className="featureDesc">生徒管理</p>
-                <ul>
-                    <li>生徒個人情報</li>
-                    <li>成績管理</li>
-                    <li>連絡事項</li>
-                </ul>
+            {/* 1st line */}
+            <div className='customer1' style={{display:'flex'}}>
+                <div className="customerContent" style={{margin:'20px'}}>
+                    <img src='images/cramschool.jpg' alt='slcramschoolide' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">進学塾</p>
+                    <p className="customerDescdetail">生徒様の個人情報、教室管理をサポート</p>
+                </div>
+                <div className="customerContent" style={{margin:'20px'}}>
+                    <img src='images/englishlesson.jpg' alt='englishlesson' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">英会話スクール</p>
+                    <p className="customerDescdetail">講師管理や各種テストの管理はお任せ</p>
+                </div>
+                <div className="customerContent" style={{margin:'20px'}}>
+                    <img src='images/swimminglesson.jpg' alt='swimminglesson' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">スイミングスクール</p>
+                    <p className="customerDescdetail">保護者様との連絡やプロモーションに</p>
+                </div>
             </div>
-            <div className="featureContent" style={{margin:'20px'}}>
-                <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
-                <p className="featureDesc">講師管理</p>
-                <ul>
-                    <li>講師個人情報</li>
-                    <li>契約事項</li>
-                    <li>連絡事項</li>
-                </ul>
+            {/* 2nd line */}
+            <div className='customer1' style={{display:'flex'}}>
+                <div className="customerContent" style={{margin:'20px'}}>
+                    <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">ヨガ教室</p>
+                    <p className="customerDescdetail">生徒様への一斉連絡、経理処理が人気です</p>
+                </div>
+                <div className="customerContent" style={{margin:'20px'}}>
+                    <img src='images/pclesson.jpg' alt='pclesson' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">資格取得スクール</p>
+                    <p className="customerDescdetail">テストの予定や成績をラクラク管理</p>
+                </div>
+                <div className="customerContent" style={{margin:'20px'}}>
+                    <img src='images/afterschool.jpg' alt='afterschool' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">学童・プリスクール</p>
+                    <p className="customerDescdetail">入退室が分かって、保護者様も安心</p>
+                </div>
             </div>
-            <div className="featureContent" style={{margin:'20px'}}>
-                <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
-                <p className="featureDesc">教室管理</p>
-                <ul>
-                    <li>教室カレンダー</li>
-                    <li>契約事項</li>
-                    <li>連絡事項</li>
-                </ul>
-            </div>
+
         </div>
-        {/* 2nd line */}
-        <div classname='featuer1' style={{display:'flex'}}>
-            <div className="featureContent" style={{margin:'20px'}}>
-                <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
-                <p className="featureDesc">入出金管理</p>
-                <ul>
-                    <li>入金情報</li>
-                    <li>出金事項</li>
-                    <li>その他経理事項</li>
-                </ul>
-            </div>
-            <div className="featureContent" style={{margin:'20px'}}>
-                <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
-                <p className="featureDesc">連絡管理</p>
-                <ul>
-                    <li>一斉送信情報</li>
-                    <li>生徒・保護者連絡事項</li>
-                    <li>講師連絡事項</li>
-                </ul>
-            </div>
-            <div className="featureContent" style={{margin:'20px'}}>
-                <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/>
-                <p className="featureDesc">入退室管理</p>
-                <ul>
-                    <li>生徒入退室情報</li>
-                    <li>講師退室情報</li>
-                </ul>
-            </div>
-        </div>
+            
     </>
   );
 };

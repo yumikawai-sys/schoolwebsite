@@ -8,6 +8,7 @@ import Main from "./components/Main.js";
 import About from "./components/About.js";
 import Feature from "./components/Feature.js";
 import Customer from "./components/Customer.js";
+import Introduction from "./components/Introduction.js";
 import Faq from "./components/Faq.js";
 import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
@@ -48,23 +49,17 @@ function App() {
   return (
     <div className="App">
 
-      {/* topbar */}
+      
       <Topbar />
-      {/* menu */}
       <Menu />
-      {/* main */}
       <Main />
-      {/* about */}
       <About />
-      {/* feature */}
       <Feature />
-      {/* customer */}
       <Customer />
-      {/* faq */}
+      <Introduction />
       <Faq />
-      {/* contact */}
       <Contact />
-      {/* footer */}
+      
       <Footer /> 
       {/* cookie */}
       {modalIsOpen && (

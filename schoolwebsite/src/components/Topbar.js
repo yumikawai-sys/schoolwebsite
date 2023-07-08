@@ -13,10 +13,12 @@ export default function Topbar() {
             </div>
             {/* menu items */}
             <ul style={{ display: 'flex', listStyle:'none'}}>
-                <li style={{margin:'10px'}}>SmartSchoolとは</li>
-                <li style={{margin:'10px'}}>機能について</li>
-                <li style={{margin:'10px'}}>ご利用例</li>
-                <li style={{margin:'10px'}}>よくあるご質問</li>
+                <li style={{margin:'20px'}}>SmartSchoolとは</li>
+                <li style={{margin:'20px'}}>機能について</li>
+                <li style={{margin:'20px'}}>ご利用例</li>
+                <li style={{margin:'20px'}}>ご利用までの流れ</li>
+                <li style={{margin:'20px'}}>よくあるご質問</li>
+                <li style={{margin:'20px'}}>お問合せ</li>
             </ul>
             {/* button */}
             <button style={{marginRight:'20px', backgroundColor:'#f5b105', height:'40px', width:'140px', borderRadius:'8px',
