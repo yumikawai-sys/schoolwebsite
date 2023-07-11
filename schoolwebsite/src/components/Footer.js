@@ -16,7 +16,7 @@ export default function Footer() {
                 <li style={{margin:'10px', color:'white'}}>よくあるご質問</li>
                 <li style={{margin:'10px', color:'white'}}>お問合せ</li>
             </ul>
-        <p style={{margin:'0', textAlign:'center', paddingBottom:'20px'}}>© Copyright 2023, SAFE HARBOUR Research & Technologies Corp. All Rights Reserved.</p>
+        <p style={{margin:'0', textAlign:'center', paddingBottom:'20px', color: 'rgb(203, 206, 206)'}}>© Copyright 2023, SmartSchool Technologies Inc. All Rights Reserved.</p>
       
     </div>
   );

@@ -6,7 +6,7 @@ export default function Customer() {
     <>
         <div className="customerall">
             <h2 className='aboutTitle'>ご利用例</h2>
-            <h3 className='subTitle'>導入事例とご利用までの流れ</h3>
+            <h3 className='subTitle'>SmartSchool導入事例</h3>
         
             {/* 1st line */}
             <div className='customer1' style={{display:'flex'}}>
@@ -16,14 +16,14 @@ export default function Customer() {
                     <p className="customerDescdetail">生徒様の個人情報、教室管理をサポート</p>
                 </div>
                 <div className="customerContent" style={{margin:'20px'}}>
-                    <img src='images/englishlesson.jpg' alt='englishlesson' style={{maxWidth: '100%'}}/>
-                    <p className="customerDesc">英会話スクール</p>
-                    <p className="customerDescdetail">講師管理や各種テストの管理はお任せ</p>
+                    <img src='images/smartphone.jpg' alt='englishlesson' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">資格スクール</p>
+                    <p className="customerDescdetail">各種テストのコンテンツ管理にも</p>
                 </div>
                 <div className="customerContent" style={{margin:'20px'}}>
-                    <img src='images/swimminglesson.jpg' alt='swimminglesson' style={{maxWidth: '100%'}}/>
-                    <p className="customerDesc">スイミングスクール</p>
-                    <p className="customerDescdetail">保護者様との連絡やプロモーションに</p>
+                    <img src='images/girl.jpg' alt='afterschool' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">学童・プリスクール</p>
+                    <p className="customerDescdetail">入退室が分かって、保護者様も安心</p>
                 </div>
             </div>
             {/* 2nd line */}
@@ -35,13 +35,13 @@ export default function Customer() {
                 </div>
                 <div className="customerContent" style={{margin:'20px'}}>
                     <img src='images/pclesson.jpg' alt='pclesson' style={{maxWidth: '100%'}}/>
-                    <p className="customerDesc">資格取得スクール</p>
-                    <p className="customerDescdetail">テストの予定や成績をラクラク管理</p>
+                    <p className="customerDesc">パソコンスクール</p>
+                    <p className="customerDescdetail">講師管理や各種テストの管理はお任せ</p>
                 </div>
                 <div className="customerContent" style={{margin:'20px'}}>
-                    <img src='images/afterschool.jpg' alt='afterschool' style={{maxWidth: '100%'}}/>
-                    <p className="customerDesc">学童・プリスクール</p>
-                    <p className="customerDescdetail">入退室が分かって、保護者様も安心</p>
+                    <img src='images/englishlesson.jpg' alt='englishlesson' style={{maxWidth: '100%'}}/>
+                    <p className="customerDesc">英会話スクール</p>
+                    <p className="customerDescdetail">英検・TOEICなどテストカレンダーはお任せ</p>
                 </div>
             </div>
 

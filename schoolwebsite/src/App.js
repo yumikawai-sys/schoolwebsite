@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Modal from "react-modal";
 import React, { useRef, useState, useEffect } from "react";
@@ -12,6 +11,7 @@ import Introduction from "./components/Introduction.js";
 import Faq from "./components/Faq.js";
 import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
+import Sliderparent from './components/Sliderparent.js'
 
 Modal.setAppElement("#root");
 
@@ -48,20 +48,17 @@ function App() {
 
   return (
     <div className="App">
-
-      
       <Topbar />
       <Menu />
-      <Main />
+      <Sliderparent />
       <About />
       <Feature />
       <Customer />
       <Introduction />
       <Faq />
       <Contact />
-      
       <Footer /> 
-      {/* cookie */}
+      
       {modalIsOpen && (
       <Modal
         isOpen={modalIsOpen}
