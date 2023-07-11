@@ -15,6 +15,7 @@ export default function Introduction() {
                 Step4 設定 & 本格稼働 */}
 
             <ProgressSteps />
+    
     </div>
   );
 };

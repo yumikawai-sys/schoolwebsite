@@ -37,11 +37,11 @@ export default function Main() {
                 
             </div>
             <div className='mainComment' style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-                <h2 style={{color:'#f5b105', textAlign:'center', margin:'0', fontSize:'30px'}}>
+                <h2 style={{color:'#21AC95', textAlign:'center', margin:'0', fontSize:'30px'}}>
                     SmartSchool</h2>
                 <img src="images/logo.png" alt="logo" style={{ height: '50px'}}/>
                 <h2 style={{color:'#f5b105', textAlign:'center', margin:'0', fontSize:'30px'}}>
-                    は頑張るスクール経営者様の『あったらいいな』を形にしたアプリです</h2>
+                    は頑張るスクール経営者様の『あったらいいな』を応援します</h2>
             </div>
         </>
     );

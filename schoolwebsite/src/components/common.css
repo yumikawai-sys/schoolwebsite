@@ -93,6 +93,7 @@ ul {
 .customerall {
     margin-top: 20px;
     background-color: #d5f5ef;
+    padding-bottom: 80px;
 }
 .customer1 {
     display: flex;
@@ -115,6 +116,27 @@ ul {
 .ProgressContent {
     justify-content: center;
     align-items: center;
+}
+.line {
+    /* margin: 0 1rem; */
+    height: 1px;
+    width: 100%;
+    background-color:rgb(203, 206, 206);
+    margin-top:3%;
+}
+.faqall {
+    background-color: #d5f5ef;
+    margin: 20px 0;
+}
+.faqcontent {
+    padding-bottom: 80px;
+}
+.contactall {
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+.footerall {
+    background-color:#0a8b75;
 }
 /* Slider */
 .wrap 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import './common.css';
 
 const MainContainer = styled.div`
   width: 100%;
@@ -125,20 +126,44 @@ export default function ProgressSteps() {
   return (
     <MainContainer>
       <StepContainer width={width}>
+        {/* <div>
+          1
+        </div>
+        <div className='line'></div>
+        <div>
+          2
+        </div>
+        <div className='line'></div>
+        <div>
+          3
+        </div>
+        <div className='line'></div>
+        <div>
+          4
+        </div> */}
+
         {steps.map(({ step, label }) => (
+          <>
           <StepWrapper key={step}>
-            <StepStyle step={activeStep >= step ? 'completed' : 'incomplete'}>
-              {activeStep > step ? (
-                <CheckMark>L</CheckMark>
-              ) : (
-                <StepCount>{step}</StepCount>
-              )}
-            </StepStyle>
-            <StepsLabelContainer>
-              {/* <StepLabel key={step}>{label}</StepLabel> */}
-            </StepsLabelContainer>
-          </StepWrapper>
-        ))}
+             <StepStyle step={activeStep >= step ? 'completed' : 'incomplete'}>
+               {activeStep > step ? (
+                 <CheckMark>L</CheckMark>
+               ) : (
+                 <StepCount>{step}</StepCount>
+               )}
+             </StepStyle>
+             {/* <StepsLabelContainer>
+               <StepLabel key={step}>{label}</StepLabel>
+             </StepsLabelContainer> */}
+           </StepWrapper>
+           {step < 4 ? (
+                 <div className='line'></div>
+               ) : (
+                 ""
+               )}
+           
+           </>
+        ))} 
       </StepContainer>
       <ButtonsContainer>
         <ButtonStyle onClick={prevStep} disabled={activeStep === 1}>
@@ -152,7 +177,7 @@ export default function ProgressSteps() {
       {activeStep == 1 ? (
         <div className='ProgressContent' style={{maxWidth: '600px', display:'flex', flexDirection:'column',
         justifyContent:'center', alignContent:'center'}}>
-          <h2>お問合せ</h2>
+          <h2 style={{color:'#21AC95'}}>お問合せ</h2>
           <img src='images/contact.jpg' alt='contact' style={{maxWidth: '40%', maxHeight:'40%'}}/>
           <h3>お問合せフォームからご連絡ください。<br/>御社専属の担当者が、お伺いいたします。<br/>
           またデモンストレーションも、ご覧いただけます。</h3>
@@ -162,7 +187,7 @@ export default function ProgressSteps() {
       {activeStep == 2 ? (
         <div className='ProgressContent' style={{maxWidth: '600px', display:'flex', flexDirection:'column',
         justifyContent:'center', alignContent:'center'}}>
-          <h2>ご案内</h2>
+          <h2 style={{color:'#21AC95'}}>ご案内</h2>
           <img src='images/meeting.jpg' alt='meeting' style={{maxWidth: '40%', maxHeight:'40%'}}/>
           <h3>御社の状況をお伺いし、御社に最適なサービスを<br/>ご提案をさせていただきます。<br/>
               何でもご相談ください。</h3>
@@ -172,7 +197,7 @@ export default function ProgressSteps() {
       {activeStep == 3 ? (
         <div className='ProgressContent' style={{maxWidth: '600px', display:'flex', flexDirection:'column',
           justifyContent:'center', alignContent:'center'}}>
-          <h2>ご契約</h2>
+          <h2 style={{color:'#21AC95'}}>ご契約</h2>
           <img src='images/contract.jpg' alt='contract' style={{maxWidth: '40%', maxHeight:'40%'}}/>
           <h3>申し込みはオンラインで完結。<br/>
           お支払い方法も豊富に取り揃えています。<br/>ぜひご相談ください。</h3>
@@ -182,28 +207,12 @@ export default function ProgressSteps() {
       {activeStep == 4 ? (
         <div className='ProgressContent' style={{maxWidth: '600px', display:'flex', flexDirection:'column',
         justifyContent:'center', alignContent:'center'}}>
-          <h2>設定 & 本格稼働</h2>
+          <h2 style={{color:'#21AC95'}}>設定 & 本格稼働</h2>
           <img src='images/implementation.jpg' alt='implementation' style={{maxWidth: '40%', maxHeight:'40%'}}/>
           <h3>担当者が御社に出向いて、初期設定いたします。<br/>
           本格稼働前には、ご利用方法など改めて<br/>ひとつひとつご説明いたします。</h3>
         </div>
       ):("")}
-
-      {/* <h2>お問合せ</h2>
-      <h3>お問合せフォームからご連絡ください。御社専属の担当者が、お伺いいたします。<br/>
-      またデモンストレーションも、ご覧いただけます。</h3>
-
-      <h2>ご案内</h2>
-      <h3>御社の状況をお伺いし、御社に最適なサービスをご提案をさせていただきます。<br/>
-      何でもご相談ください。</h3>
-
-      <h2>ご契約</h2>
-      <h3>申し込みはオンラインで完結。お手間を取らせません。<br/>
-      お支払い方法も豊富に取り揃えていますので、ご相談ください。</h3>
-
-      <h2>設定 & 本格稼働</h2>
-      <h3>担当者が御社に出向いて、初期設定をいたします。<br/>
-      本格稼働前には、ご利用方法など改めてひとつひとつご説明いたします。</h3> */}
 
     </MainContainer>
   )
