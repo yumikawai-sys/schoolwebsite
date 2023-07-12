@@ -3,7 +3,6 @@ import Modal from "react-modal";
 import React, { useRef, useState, useEffect } from "react";
 import Topbar from "./components/Topbar.js";
 import Menu from "./components/Menu.js";
-import Main from "./components/Main.js";
 import About from "./components/About.js";
 import Feature from "./components/Feature.js";
 import Customer from "./components/Customer.js";
@@ -17,8 +16,12 @@ Modal.setAppElement("#root");
 
 function App() {
   const aboutRef = useRef()
-  const FAQRef = useRef()
-  const consultationRef = useRef()
+  const featureRef = useRef()
+  const customerRef = useRef()
+  const introductionRef = useRef()
+  const faqRef = useRef()
+  const contactRef = useRef()
+
   const [modalIsOpen, setIsOpen] = React.useState(true);
   let [posts, setPosts] = useState(false);
 
@@ -48,16 +51,37 @@ function App() {
 
   return (
     <div className="App">
-      <Topbar />
+      <Topbar about={aboutRef} feature={featureRef} customer={customerRef} introduction={introductionRef} 
+      faq={faqRef} contact={contactRef}/>
       <Menu />
       <Sliderparent />
-      <About />
-      <Feature />
-      <Customer />
-      <Introduction />
-      <Faq />
-      <Contact />
-      <Footer /> 
+
+      <section ref={aboutRef}>
+        <About />
+      </section>
+
+      <section ref={featureRef}>
+        <Feature />
+      </section>
+
+      <section ref={customerRef}>
+        <Customer />
+      </section>
+
+      <section ref={introductionRef}>
+        <Introduction />
+      </section>
+
+      <section ref={faqRef}>
+        <Faq />
+      </section>
+
+      <section ref={contactRef}>
+        <Contact />
+      </section>
+
+      <Footer about={aboutRef} feature={featureRef} customer={customerRef} introduction={introductionRef} 
+      faq={faqRef} contact={contactRef}/> 
       
       {modalIsOpen && (
       <Modal

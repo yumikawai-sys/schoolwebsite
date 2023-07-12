@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './common.css';
 
 const sliderimages = [
   'images/teacherlarge.jpg',
@@ -22,9 +23,9 @@ const Sliderchildhild = (props) => {
   return (
     <>
       <div style={{display:'flex', justifyContent:'center', alignContent: 'center'}}>
-        <input type="radio" id='first' style={{marginRight:'10px'}} onClick={(e)=> {e.preventDefault(); handleInputChange(0)}}></input>
-        <input type="radio" id='second' style={{marginRight:'10px'}} onClick={(e)=> {e.preventDefault(); handleInputChange(1)}}></input>
-        <input type="radio" id='third' style={{marginRight:'10px'}} onClick={(e)=> {e.preventDefault(); handleInputChange(2)}}></input>
+        <input style={{marginRight:'40px'}} type="radio" id='first' className="radiobuttons" onClick={(e)=> {e.preventDefault(); handleInputChange(0)}}></input>
+        <input style={{marginRight:'40px'}} type="radio" id='second' className="radiobuttons" onClick={(e)=> {e.preventDefault(); handleInputChange(1)}}></input>
+        <input style={{marginRight:'40px'}} type="radio" id='third' className="radiobuttons" onClick={(e)=> {e.preventDefault(); handleInputChange(2)}}></input>
       </div>
     </>
   );

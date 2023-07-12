@@ -41,7 +41,7 @@ export default function Customer() {
                 <div className="customerContent" style={{margin:'20px'}}>
                     <img src='images/englishlesson.jpg' alt='englishlesson' style={{maxWidth: '100%'}}/>
                     <p className="customerDesc">英会話スクール</p>
-                    <p className="customerDescdetail">英検・TOEICなどテストカレンダーはお任せ</p>
+                    <p className="customerDescdetail">英検・TOEICなどテストカレンダー管理にも</p>
                 </div>
             </div>
 

@@ -2,10 +2,7 @@
     margin-top: 100px;
     height:80vh;
 }
-ul {
-    /* list-style-type: "*"; */
-    /* list-style-image: url(images/bullet.png); */
-}
+
 /* Slides */
 .mainTitle {
     padding-top:120px;
@@ -138,17 +135,21 @@ ul {
 .footerall {
     background-color:#0a8b75;
 }
+.radiobuttons::before {
+    border: 2px solid blue; /* Change the border color */
+    border-radius: 50%;
+    background-color: white; /* Change the background color */
+    margin-right: 10px;
+}
+.radiobuttons:checked::before {
+    background-color: blue; /* Change the background color when selected */
+  }
+
 /* Slider */
 .wrap 
 {
-    /* grid-column-start:1;
-    grid-column-end:11; */
-    /* grid-row-start:2;
-    grid-row-end:3; */
-    /* border-bottom: 1px solid black; */
     display: flex;
     align-items: center;
-    /* padding-top:100px; */
     width: 100%;
     overflow: hidden;
     position: relative;

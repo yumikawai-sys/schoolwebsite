@@ -9,7 +9,7 @@ export default function Feature() {
         {/* 1st line */}
         <div className='featuer1' style={{display:'flex', justifyContent:'center'}}>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">生徒管理</p>
@@ -21,7 +21,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">講師管理</p>
@@ -33,7 +33,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">教室管理</p>
@@ -48,7 +48,7 @@ export default function Feature() {
         {/* 2nd line */}
         <div className='featuer1' style={{display:'flex', justifyContent:'center'}}>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">入出金管理</p>
@@ -60,7 +60,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">連絡管理</p>
@@ -72,7 +72,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">入退室管理</p>
@@ -86,7 +86,7 @@ export default function Feature() {
         {/* 3rd line */}
         <div className='featuer1' style={{display:'flex', justifyContent:'center'}}>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                     <p className="featureDesc">テスト管理</p>
@@ -98,7 +98,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                 <p className="featureDesc">カレンダー管理</p>
@@ -110,7 +110,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="featureContent">
-                {/* <img src='images/exercize.jpg' alt='slide' style={{maxWidth: '100%'}}/> */}
+                
                 <div className="featureInner" style={{display:'flex', flexDirection:'column',
                 justifyContent:'center', alignItems:'center'}}>
                 <p className="featureDesc">マーケティング管理</p>

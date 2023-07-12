@@ -126,21 +126,6 @@ export default function ProgressSteps() {
   return (
     <MainContainer>
       <StepContainer width={width}>
-        {/* <div>
-          1
-        </div>
-        <div className='line'></div>
-        <div>
-          2
-        </div>
-        <div className='line'></div>
-        <div>
-          3
-        </div>
-        <div className='line'></div>
-        <div>
-          4
-        </div> */}
 
         {steps.map(({ step, label }) => (
           <>
@@ -152,9 +137,7 @@ export default function ProgressSteps() {
                  <StepCount>{step}</StepCount>
                )}
              </StepStyle>
-             {/* <StepsLabelContainer>
-               <StepLabel key={step}>{label}</StepLabel>
-             </StepsLabelContainer> */}
+             
            </StepWrapper>
            {step < 4 ? (
                  <div className='line'></div>

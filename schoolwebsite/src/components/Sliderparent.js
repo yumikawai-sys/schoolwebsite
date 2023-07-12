@@ -12,10 +12,16 @@ const Sliderparent = () => {
     <div>
       <div style={{display:'flex'}}> 
         <h2>あなたの笑顔が見たいから</h2>
-        {/* <h3>スクール・塾の運営をITでサポート！</h3> */}
+        
       </div>
-      <img style={{width:'100%'}} src={text}/>
-      <Sliderchild handleValueChange={handleValueChange} />
+      <div style={{ backgroundImage: `url(${text})`, width:'100%', height:'630px' }}>
+        <div style={{paddingTop:'290px'}}></div>
+        <h1 className="mainmessage" style={{color:'white', backgroundColor:'gray', opacity:'0.8', width: '22%', 
+        marginLeft: '50px', padding: '5px', textAlign:'center'}}>スクール・塾の運営を<br />ITでサポート！</h1>
+        
+        <div style={{paddingTop:'160px'}}></div>
+        <Sliderchild handleValueChange={handleValueChange} />
+      </div>
     </div>
   );
 };
