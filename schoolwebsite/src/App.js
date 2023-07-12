@@ -101,33 +101,31 @@ function App() {
       <div className="cookies">
         <div className="cookies-content">
           <div className="row-container">
-            <p>By clicking “Accept”, you agree to the storing of cookies on your device to enhance site navigation, 
-            analyze site usage, and assist in our marketing efforts. <br/>
-          
-            <div>
-              <div href="#CookiesArea" onClick={handleShowTerms}>Learn more</div>
+            <p>当ウェブサイトでは、お客様により良いサービスを提供するため、クッキーを利用しています。
+                  クッキーの使用に同意いただける場合は「同意」ボタンをクリックし、<br />
+                  クッキーポリシーについては「詳細を見る」ボタンをクリックしてください。  <br/>
+            
+            <div style={{display:'flex', justifyContent:'space-between', paddingRight:'50px'}}>
+              <div href="#CookiesArea" onClick={handleShowTerms} ><a href='#cookiecontent'>詳細を見る</a></div>
+              <button onClick={modalShow} >同 意</button>
             </div>
             </p> 
-           
-            <button onClick={modalShow}>Accept</button>
           </div>
         
-          <div className="column-container">
+          <div className="column-container" id='cookiecontent'>
             {showTerms && (
               <div id="CookiesArea">
                 <div className="cookie-policy-wrapper">
-                  <h2>Cookies policy</h2>
+                  <h2>クッキーポリシー</h2>
                   <br/>
-                  <p>This Cookie Policy serves to inform you about the utilization of cookies, 
-                    which are diminutive text files that are stored on your computer when you access specific web pages. </p>
+                  <p>当社では、クッキーを使用して収集した情報を利用して、お客様のウェブサイトの利用状況（アクセス状況、トラフィック、ルーティング等）を分析し、
+                    ウェブサイト自体のパフォーマンス改善や、当社からお客様に提供するサービスの向上、改善のために使用することがあります。</p>
                   
-                  <p>However, we do employ encrypted data obtained from these cookies to enhance your browsing experience 
-                    on our website. This includes leveraging the gathered information to identify and resolve errors, 
-                    ultimately improving the overall usability of the site.</p>
-                  <br/>
+                  <p>この他、クッキーは、提携する広告配信サービス提供会社における行動ターゲティング広告の配信に使用される場合があります。</p>
+                  {/* <br/>
                   <p>We present you with this information as part of our ongoing commitment to comply with current 
-                    legislation and to ensure utmost transparency regarding your privacy while using our website. </p>
-                  
+                    legislation and to ensure utmost transparency regarding your privacy while using our website. </p> */}
+                    
                 </div>
               </div>
             )}
