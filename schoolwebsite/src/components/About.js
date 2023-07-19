@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="aboutall">
         <h2 className='aboutTitle'>SmartSchoolとは</h2>
-        <h3 className='subTitle'>スクールの管理業務を一気にお任せ</h3>
+        <h3 className='subTitle'>スクールの管理業務をお任せください</h3>
         
         <div className="aboutContent">
             <img src='images/people.png' alt='students' style={{maxWidth:'28vw', padding:'20px'}}/> 

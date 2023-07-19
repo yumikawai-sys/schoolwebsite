@@ -12,7 +12,7 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 import Sliderparent from './components/Sliderparent.js'
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
 function App() {
   const aboutRef = useRef()
